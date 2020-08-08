@@ -3,6 +3,7 @@ import { render } from '@testing-library/react'
 import TimerContainer from './TimerContainer'
 
 describe('<TimerContainer />', () => {
+    
     test('should render digits', () => {
         const { getByText } = render(<TimerContainer />)
         const timeElement = getByText('00:00:00')
@@ -18,10 +19,9 @@ describe('<TimerContainer />', () => {
     })
 
     test('should render progress bar', () => {
-        const container = render(<TimerContainer />)
-        
+        const { getByText } = render(<TimerContainer />)
+        const loadingElement = getByText('Loading')
+        expect(loadingElement).toBeInTheDocument()
     })
-    
-    
 
 })
