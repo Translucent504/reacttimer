@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "ERU react timer",
+  "name": "ERU react timer with Typescript and TDD",
   "icons": [
     {
       "src": "favicon.ico",
