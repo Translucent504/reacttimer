@@ -5,3 +5,55 @@
     background: black;
 }
 
+.progressBarContainer {
+    margin-top: 20px;
+    width: 80vw;
+}
+
+.progressBar {
+    background-color: white;
+    width:20%;
+    height: 6px;
+}
+
+.flexContainer {
+    display:flex;
+    flex-direction: column;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 0px 15px aliceblue;
+}
+
+.buttonContainer {
+    width: 100%;
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.reset-button,
+.replay-button {
+    border-radius: 50%;
+    font-size: 5rem;
+    background: black;
+    color: white;
+    border: none;
+    padding: 0;
+    margin-left: auto;
+    line-height: 0;
+    cursor: pointer;
+    user-select: none;
+    transition: transform 0.2s;
+}
+
+.reset-button:hover,
+.replay-button:hover {
+    transform : scale(1.1);
+    transition: transform 0.2s;
+}
+
+.reset-button:active,
+.replay-button:active {
+    transform : translateY(2px);
+    transition: transform 0.2s;
+}
