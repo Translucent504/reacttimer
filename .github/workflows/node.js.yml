@@ -33,3 +33,4 @@ jobs:
       
     - name: Deploy to Surge
       run: surge ./build https://eru-reacttimer.surge.sh --token ${{ secrets.SURGE_TOKEN }} 
+      if: ${{ matrix.node-version }} == '14.x'
