@@ -7,6 +7,9 @@ type Props = {
     handleChangeCountdown: (seconds: number) => void;
 }
 
+// This component takes in seconds and renders text
+// that represents those seconds ass HH:MM::SS
+
 const DigitalDisplay: React.FC<Props> = ({ secondsToDisplay, handleChangeCountdown }) => {
     secondsToDisplay = Math.abs(secondsToDisplay)
     const displayOptions = {
@@ -25,7 +28,7 @@ const DigitalDisplay: React.FC<Props> = ({ secondsToDisplay, handleChangeCountdo
         displayOptions
     )
     return (
-        <div className='digital-display-container'>
+        <div data-testid='digitalDisplay' className='digital-display-container'>
             {`${hours}:${minutes}:${seconds}`}
         </div>
     )
