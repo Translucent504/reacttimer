@@ -1,0 +1,16 @@
+.toggle-button {
+    border-radius: 50%;
+    font-size: 5rem;
+    background: white;
+    border: none;
+    padding: 0;
+    line-height: 0;
+    cursor: pointer;
+    user-select: none;
+    transition: transform 0.2s;
+}
+
+.toggle-button:hover {
+    transform : scale(1.1);
+    transition: transform 0.2s;
+}
